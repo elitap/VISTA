@@ -19,8 +19,8 @@ from typing import Any, Optional, Tuple, Type
 
 import numpy as np
 import torch
-from segment_anything.modeling.common import LayerNorm2d
-from segment_anything.modeling.prompt_encoder import PromptEncoder
+from .segment_anything.modeling.common import LayerNorm2d
+from .segment_anything.modeling.prompt_encoder import PromptEncoder
 from torch import nn
 
 
@@ -99,6 +99,7 @@ class VistaPromptEncoder(PromptEncoder):
         masks: Optional[torch.Tensor],
         class_labels: Optional[torch.Tensor],
     ) -> Tuple[torch.Tensor, torch.Tensor]:
+        
         """
         Embeds different types of prompts, returning both sparse and dense
         embeddings.

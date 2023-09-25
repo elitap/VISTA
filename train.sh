@@ -1,6 +1,6 @@
 python training/main_2pt5d.py --max_epochs 100 --val_every 1 --optim_lr 0.000005 \
 --num_patch 24 --num_prompt 32 \
---json_list ./../data/han/task_HaN_small.json \
+--json_list ./../data/han/task_HaN.json \
 --data_dir ./../data/han \
 --roi_z_iter 9 --save_checkpoint \
 --sam_base_model vit_b \

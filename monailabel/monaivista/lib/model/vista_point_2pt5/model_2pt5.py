@@ -20,8 +20,8 @@ from typing import Any, Dict, List, Tuple
 
 import monai
 import torch
-from segment_anything.modeling import TwoWayTransformer
-from segment_anything.modeling.mask_decoder import MaskDecoder
+from .segment_anything.modeling import TwoWayTransformer
+from .segment_anything.modeling.mask_decoder import MaskDecoder
 from torch import nn
 from torch.nn import functional as F
 
